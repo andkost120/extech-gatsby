@@ -1,0 +1,113 @@
+.btn {
+  &-primary {
+    color: white;
+    background: $blue;
+    border-radius: 2px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid $blue;
+    line-height: 24px;
+  }
+  &-second {
+    color: $blue;
+    border: 2px solid $blue;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 2px;
+    font-weight: bold;
+    line-height: 24px;
+    background-color: white;
+  }
+  &-third {
+    color: white;
+    border-radius: 2px;
+    border: solid 2px #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    line-height: 24px;
+    &:hover {
+      color: $blue !important;
+      background-color: white;
+    }
+  }
+  &-fourth {
+    color: $blue;
+    background-color: white;
+    border-radius: 2px;
+    border: solid 2px #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    &:hover {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  &-fifth {
+    border: 1px solid #332f30;
+    border-radius: 4px;
+    color: #332f30;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 16px;
+    background-color: white;
+  }
+  &-goto {
+    border-radius: 2px;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 6px 8px;
+    display: inline-block;
+    span {
+      color: black;
+      letter-spacing: 2px;
+      font-family: "Rubik";
+      font-weight: 500;
+      font-size: 12px !important;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+    }
+    @include mq("laptop", max) {
+      font-size: 10px;
+    }
+    .arrow-right {
+      width: 13px;
+      height: 8px;
+    }
+  }
+  &-submit {
+    padding: 8px 23px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    color: $gold;
+    border: 2px solid $gold;
+    border-radius: 0px 4px 4px 0px;
+    &:hover {
+      background-color: $gold;
+      color: white;
+    }
+  }
+}
+
+.show-more {
+  cursor: pointer;
+  margin-top: 16px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $gold;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+.form-control {
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: sans-serif;
+  resize: none;
+  &:focus {
+    border: 1px solid #06038d;
+    outline: none;
+    box-shadow: none;
+  }
+}
+.form-label {
+  font-family: "Source Sans Pro";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+  margin: 0;
+}
+.form-select {
+  &:focus {
+    border-color: $blue;
+    box-shadow: none;
+  }
+  option {
+    &:first-child {
+      color: #869ea4;
+    }
+  }
+}
+.error {
+  border: 1px solid red !important;
+}
+.errorsapn {
+  font-size: 0.75em;
+  font-weight: 400;
+  width: 100%;
+  color: red;
+}
+textarea {
+  height: 120px;
+}

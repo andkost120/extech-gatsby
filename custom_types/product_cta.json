@@ -1,0 +1,36 @@
+{
+  "Main": {
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "text": {
+      "type": "Text",
+      "config": {
+        "label": "Text"
+      }
+    },
+    "btn_text": {
+      "type": "Text",
+      "config": {
+        "label": "Button Text"
+      }
+    },
+    "btn_link": {
+      "type": "Text",
+      "config": {
+        "label": "Button Link"
+      }
+    },
+    "bg_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Bacground Image"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import "react-tabs/style/react-tabs.css";
+
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
+
+@import "component/button";
+@import "component/composition";
+@import "component/modal";
+@import "component/form-control";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "page/home";
+@import "page/case-study";
+@import "page/news-blog";
+@import "page/contact-us";
+@import "page/services";
+@import "page/project-gallery";
+@import "page/our-team";
+@import "page/technology";
+@import "page/product-page";
+@import "page/category";
+@import "page/project";

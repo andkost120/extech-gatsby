@@ -1,0 +1,311 @@
+.navigation {
+  .navbar {
+    background-color: $blue !important;
+    height: 54px;
+    padding: 0;
+    @include mq("laptop") {
+      height: 110px;
+      margin-top: 40px;
+      background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+    .navbar-brand {
+      .primary-logo,
+      .secondary-logo {
+        width: 104px;
+        height: 28px;
+        display: block;
+        @include mq("laptop") {
+          width: 188px;
+          height: 50px;
+        }
+      }
+      .secondary-logo {
+        display: none;
+      }
+    }
+    .hamburger {
+      display: none;
+      @include mq("laptop", max) {
+        display: block;
+      }
+    }
+    .dropdown {
+      position: relative;
+      display: flex;
+      &-content {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        width: 100%;
+        top: 150px;
+        .black-back {
+          display: flex;
+          justify-content: space-between;
+          background-color: rgba(0, 0, 0, 0.9);
+          border-radius: 4px;
+          padding: 24px;
+          .dropmenu {
+            width: calc(50% - 12px);
+            a {
+              color: white;
+              font-family: "Source Sans Pro";
+              font-size: 14px;
+              line-height: 22px;
+              &:hover {
+                color: $gold;
+              }
+            }
+            &-link {
+              cursor: pointer;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 8px;
+              &:hover {
+                color: $gold;
+              }
+            }
+          }
+          .hover-img {
+            width: calc(50% - 12px);
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .mobile-view {
+          display: none;
+          h5 {
+            color: black;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 33px;
+            padding: 32px 0 16px;
+            margin: 0;
+            border-bottom: 1px solid rgba(208, 208, 208, 0.4);
+          }
+          .menu-item {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(208, 208, 208, 0.4);
+            position: relative;
+            &::after {
+              content: url("../assets/chevron-right-gold.svg");
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+            .menu-link {
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 24px;
+              color: #656667;
+            }
+            small {
+              display: block;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+        @include mq("laptop", max) {
+          position: relative;
+          margin: 0px;
+          top: 0;
+          .container {
+            display: none;
+          }
+          .mobile-view {
+            display: block;
+          }
+        }
+      }
+      &:hover {
+        @include mq("laptop") {
+          .nav-link::after {
+            content: url("../assets/chevron-down-gold.svg");
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+      @include mq("laptop") {
+        &:hover {
+          .dropdown-content {
+            display: block;
+          }
+        }
+      }
+      @include mq("laptop", max) {
+        flex-direction: column;
+        &.show {
+          .nav-link {
+            &::before {
+              content: url("../assets/arrow-left.svg");
+              left: 0;
+              margin-right: 24px;
+            }
+            span {
+              display: none;
+            }
+          }
+          .dropdown-content {
+            display: block;
+          }
+        }
+      }
+    }
+    .contact-link {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      line-height: 14px;
+      @include mq("laptop") {
+        display: none;
+      }
+    }
+    &-nav {
+      align-items: center;
+      margin-left: auto;
+      height: 100%;
+      .nav-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:hover {
+          .nav-link {
+            color: $gold !important;
+            transition: all ease-out 0.2s;
+          }
+        }
+      }
+      .nav-link {
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: 700;
+      }
+      .quote-link {
+        display: flex;
+        align-items: center;
+      }
+      .call-us,
+      .social-icons,
+      .company,
+      .resources {
+        display: none;
+      }
+      .btn-second {
+        color: white;
+        border-color: white;
+        background-color: transparent;
+        &:hover {
+          background-color: white;
+          color: $blue;
+        }
+      }
+
+      @include mq("laptop", max) {
+        display: none;
+        &.active {
+          display: flex;
+          position: absolute;
+          background: white;
+          top: 54px;
+          left: 0px;
+          flex-direction: column;
+          height: calc(100vh - 54px);
+          width: 100%;
+          z-index: 11;
+          overflow: auto;
+          .nav-item {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            padding-left: var(--bs-gutter-x, 0.75rem);
+          }
+          .nav-link {
+            font-family: "Montserrat";
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 24px;
+            color: black;
+            padding: 16px 0 !important;
+            width: 100%;
+            border-bottom: 1px solid rgba(208, 208, 208, 0.4);
+            position: relative;
+            display: flex;
+            align-items: center;
+            span {
+              content: url("../assets/chevron-right-gold.svg");
+              position: absolute;
+              right: 0;
+            }
+          }
+          .quote-link {
+            display: none;
+          }
+          .call-us {
+            justify-content: center;
+            text-align: center;
+            font-family: "Source Sans Pro";
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            padding: 32px 0 24px;
+          }
+          .social-icons {
+            display: flex;
+            justify-content: space-between;
+          }
+          .company,
+          .resources {
+            display: block;
+          }
+        }
+      }
+    }
+    &.secondary {
+      @include mq("laptop") {
+        background-color: white !important;
+      }
+      .navbar-brand {
+        .primary-logo {
+          display: none;
+          @include mq("laptop", max) {
+            display: block;
+          }
+        }
+        .secondary-logo {
+          display: block;
+          @include mq("laptop", max) {
+            display: none;
+          }
+        }
+      }
+      .navbar-nav {
+        align-items: center;
+        .nav-link {
+          color: black;
+        }
+        .btn-second {
+          color: $blue;
+          border-color: $blue;
+          &:hover {
+            color: white;
+            background-color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

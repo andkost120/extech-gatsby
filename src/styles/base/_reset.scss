@@ -1,0 +1,104 @@
+.container {
+  @include mq("laptop") {
+    max-width: 968px;
+  }
+}
+
+.dropdown-toggle::after {
+  vertical-align: 0;
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0;
+  border-left: 0.4em solid transparent;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.w105 {
+  width: 105px;
+}
+
+.nav-link {
+  color: white;
+  &:hover {
+    color: $gold;
+  }
+  &.active {
+    color: $gold !important;
+    &::after {
+      content: url("../assets/chevron-down-gold.svg");
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      @include mq("phone", max) {
+        content: "";
+      }
+    }
+  }
+}
+
+.zindex {
+  z-index: 1050;
+}
+
+.image-gallery {
+  margin-top: 24px;
+}
+.image-gallery-image {
+  border-radius: 4px;
+  max-height: 550px !important;
+  object-fit: cover !important;
+  @include mq("tablet", max) {
+    max-height: 190px !important;
+  }
+}
+
+.image-gallery-thumbnail {
+  &s-wrapper {
+    padding: 15.5px 40px;
+  }
+  &-image {
+    height: 61px !important;
+  }
+  &.active,
+  &:focus,
+  &:hover {
+    border: 3px solid #ffffff !important;
+  }
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  padding: unset;
+  top: unset;
+  bottom: -67px;
+  transform: unset;
+}
+
+.image-gallery-svg {
+  width: 12px !important;
+  height: auto !important;
+}
+
+.image-gallery-icon:hover {
+  color: $gold !important;
+}
+
+.image-gallery-swipe {
+  padding-right: 8px;
+}
+
+.dropdown-menu[data-bs-popper] {
+  margin: 0;
+}
+
+.modal {
+  padding: 0 !important;
+}

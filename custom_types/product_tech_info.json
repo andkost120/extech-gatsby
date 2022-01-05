@@ -1,0 +1,172 @@
+{
+  "Main": {
+    "cad": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "description": {
+            "type": "Text",
+            "config": {
+              "label": "Description"
+            }
+          },
+          "require_login": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Require Login"
+            }
+          },
+          "file": {
+            "type": "Link",
+            "config": {
+              "select": "media",
+              "label": "File"
+            }
+          }
+        },
+        "label": "CAD"
+      }
+    },
+    "bim": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "title"
+            }
+          },
+          "description": {
+            "type": "Text",
+            "config": {
+              "label": "Description"
+            }
+          },
+          "require_login": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Require Login"
+            }
+          },
+          "file": {
+            "type": "Link",
+            "config": {
+              "select": "media",
+              "label": "File"
+            }
+          }
+        },
+        "label": "BIM"
+      }
+    },
+    "spec": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "description": {
+            "type": "Text",
+            "config": {
+              "label": "Description"
+            }
+          },
+          "require_login": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Require Login"
+            }
+          },
+          "file": {
+            "type": "Link",
+            "config": {
+              "select": "media",
+              "label": "File"
+            }
+          }
+        },
+        "label": "Spec"
+      }
+    },
+    "literature": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "description": {
+            "type": "Text",
+            "config": {
+              "label": "Description"
+            }
+          },
+          "require_login": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Require Login"
+            }
+          },
+          "file": {
+            "type": "Link",
+            "config": {
+              "select": "media",
+              "label": "File"
+            }
+          }
+        },
+        "label": "Literature"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "Main": {
+    "kicker": {
+      "type": "Text",
+      "config": {
+        "label": "Kicker"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "content": {
+      "type": "Text",
+      "config": {
+        "label": "Content"
+      }
+    },
+    "btn_text": {
+      "type": "Text",
+      "config": {
+        "label": "Button Text"
+      }
+    },
+    "btn_link": {
+      "type": "Text",
+      "config": {
+        "label": "Button Link"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    }
+  }
+}

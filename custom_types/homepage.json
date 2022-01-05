@@ -1,0 +1,124 @@
+{
+  "Main": {
+    "main_slider": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "sub_title": {
+            "type": "Text",
+            "config": {
+              "label": "Sub TItle"
+            }
+          },
+          "btn_text": {
+            "type": "Text",
+            "config": {
+              "label": "Button Text"
+            }
+          },
+          "btn_link": {
+            "type": "Text",
+            "config": {
+              "label": "Button Link"
+            }
+          }
+        },
+        "label": "Main Slider"
+      }
+    },
+    "benefit_slider": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "kicker": {
+            "type": "Text",
+            "config": {
+              "label": "Kicker"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "content": {
+            "type": "Text",
+            "config": {
+              "label": "Content"
+            }
+          },
+          "btn_text": {
+            "type": "Text",
+            "config": {
+              "label": "Button Text"
+            }
+          },
+          "btn_link": {
+            "type": "Text",
+            "config": {
+              "label": "Button Link"
+            }
+          }
+        },
+        "label": "Benefit Slider"
+      }
+    },
+    "system_slider": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "content": {
+            "type": "Text",
+            "config": {
+              "label": "Content"
+            }
+          },
+          "btn_link": {
+            "type": "Text",
+            "config": {
+              "label": "Link"
+            }
+          }
+        },
+        "label": "System Slider"
+      }
+    }
+  }
+}

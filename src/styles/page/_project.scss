@@ -1,0 +1,25 @@
+.project-detail {
+  @extend %sectionGap;
+  .project-item__subtitle {
+    font-family: "Montserrat";
+    color: $blue;
+  }
+  .richtext-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Source Sans Pro";
+      font-weight: 500;
+    }
+  }
+  .view-product {
+    padding: 12px 24px;
+    font-weight: 500;
+    background-color: $gold;
+    color: white;
+    border-radius: 4px;
+  }
+}

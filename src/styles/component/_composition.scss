@@ -1,0 +1,114 @@
+.blue-layer {
+  background-color: rgba(6, 3, 141, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-blue {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 21.22%,
+    #06038d 48.31%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  @include mq("tablet", max) {
+    background: $blue;
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 319px;
+  background-size: cover;
+  background-position: center;
+  @extend %sectionGap;
+  @include mq("phone", max) {
+    height: 155px;
+  }
+  .hero {
+    margin-bottom: 32px;
+    @include mq("phone", max) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.breadcrumb {
+  margin-top: 32px;
+  margin-bottom: 0;
+  @include mq("phone", max) {
+    display: none;
+  }
+}
+
+path {
+  pointer-events: all;
+}
+path:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq("tablet", max) {
+    margin-top: 16px;
+    justify-content: space-around;
+  }
+  @include mq("phone", max) {
+    justify-content: space-between;
+    display: block;
+    a {
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  }
+}
+
+.richtext-content {
+  white-space: pre-line;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  li,
+  p,
+  span {
+    color: black;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: $gold;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 8px;
+  }
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+    li {
+      &::marker {
+        color: $gold;
+      }
+    }
+  }
+}

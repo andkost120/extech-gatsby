@@ -1,0 +1,128 @@
+.quote {
+  margin: 80px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 16px;
+  border-left: 4px solid $gold;
+  color: black;
+  white-space: pre-wrap;
+  @include mq("phone", max) {
+    margin: 40px 0;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 8px;
+  }
+}
+
+.promo {
+  &-img {
+    height: 325px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    @include mq("phone", max) {
+      height: 200px;
+    }
+  }
+  &-text {
+    white-space: pre-wrap;
+    display: flex;
+    align-items: center;
+    @include mq("tablet", max) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.factors {
+  margin: 80px 0 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .factor-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 25%;
+    margin-bottom: 64px;
+    @include mq("tablet", max) {
+      width: 33.33%;
+      margin-bottom: 32px;
+    }
+    @include mq("phone", max) {
+      width: 50%;
+      margin-bottom: 24px;
+    }
+    &__icon {
+      border-radius: 50%;
+      padding: 37px;
+      background-color: #f2f2f2;
+      width: 100px;
+      height: 100px;
+    }
+    &__name {
+      color: black;
+      font-weight: bold;
+      margin-top: 16px;
+      white-space: pre;
+    }
+  }
+}
+.analysis-img {
+  .col-sm-6 {
+    @include mq("phone", max) {
+      margin-top: 16px;
+    }
+  }
+}
+
+.services-slider {
+  .services-slide {
+    .service-img {
+      height: 100%;
+      img {
+        height: 314px;
+        @include mq("tablet", max) {
+          margin-bottom: 24px;
+        }
+        @include mq("phone", max) {
+          height: 196px;
+        }
+        width: 100%;
+      }
+    }
+  }
+  .thumbnail-slider-wrap {
+    margin-top: 40px;
+    @include mq("phone", max) {
+      margin: 0;
+    }
+    .slick-slide {
+      img {
+        width: 92px !important;
+        height: 61px;
+        @include mq("phone", max) {
+          width: 64px !important;
+          height: 42px;
+        }
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      @include mq("phone", max) {
+        display: none !important;
+      }
+    }
+    .slick-current {
+      img {
+        border: 3px solid #ffffff;
+      }
+    }
+  }
+}

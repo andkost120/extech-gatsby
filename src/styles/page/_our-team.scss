@@ -1,0 +1,84 @@
+.team-members {
+  margin-top: 40px;
+  .intro {
+    margin-top: 24px;
+    @include mq("phone", max) {
+      margin-top: 16px;
+    }
+  }
+  .profile {
+    margin: 40px 0 80px;
+    @include mq("phone", max) {
+      margin: 16px 0 40px;
+    }
+    .col-6,
+    .col-sm-4 {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    &-item {
+      margin-bottom: 24px;
+      &__name,
+      &__role {
+        color: black;
+        text-align: center;
+      }
+      &__name {
+        @include mq("phone", max) {
+          margin-bottom: 0;
+        }
+      }
+      img {
+        width: 100%;
+        margin-bottom: 16px;
+        @include mq("phone", max) {
+          margin-bottom: 8px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .profile-item__name,
+        .profile-item__role {
+          color: $gold;
+        }
+      }
+    }
+  }
+}
+
+.profile-description {
+  color: black;
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
+.team-profile {
+  margin-bottom: 60px;
+  .headline {
+    padding: 40px 0;
+    @include mq("phone", max) {
+      padding-bottom: 16px;
+    }
+  }
+  .profile-about {
+    @include mq("phone", max) {
+      margin-top: 16px;
+    }
+  }
+  .profile-social {
+    display: flex;
+    margin-top: 36px;
+    @include mq("phone", max) {
+      margin-top: 28px;
+    }
+    li {
+      margin-right: 32px;
+      @include mq("phone", max) {
+        margin: 0;
+      }
+    }
+    @include mq("phone", max) {
+      justify-content: space-around;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Slug"
+      }
+    },
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title"
+      }
+    },
+    "header": {
+      "type": "Text",
+      "config": {
+        "label": "Header"
+      }
+    },
+    "header_text": {
+      "type": "Text",
+      "config": {
+        "label": "Header Text"
+      }
+    },
+    "content": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "allowTargetBlank": true,
+        "label": "Content"
+      }
+    },
+    "category": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["blog_category"],
+        "label": "Category"
+      }
+    },
+    "main_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Main Image"
+      }
+    },
+    "thumbnail": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Thumbnail"
+      }
+    },
+    "author_name": {
+      "type": "Text",
+      "config": {
+        "label": "Author Name"
+      }
+    },
+    "author_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Author Image"
+      }
+    },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Date"
+      }
+    }
+  }
+}

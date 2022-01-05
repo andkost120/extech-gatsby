@@ -1,0 +1,34 @@
+header {
+  .topbar {
+    .navbar {
+      background-color: #06038d !important;
+      padding: 0;
+      height: 40px;
+      @include mq("laptop", max) {
+        display: none;
+      }
+      .topbar-nav {
+        display: flex;
+        .nav-item {
+          font-size: 14px;
+        }
+      }
+    }
+    .dropdown-menu {
+      background-color: $blue;
+      .dropdown-item {
+        color: white;
+        &:hover {
+          color: $gold;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      padding-right: 0.7rem !important;
+      padding-left: 0.7rem !important;
+    }
+  }
+}
